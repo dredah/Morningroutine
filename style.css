@@ -1,0 +1,116 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0; /* Increased padding around the content */
+    box-sizing: border-box;
+    display: flex; /* Centers the card horizontally */
+    justify-content: center;
+    min-height: 100vh; /* Full height */
+    align-items: center; /* Centers the card vertically */
+    transition: padding 0.3s ease; /* Smooth transition for padding changes */
+    background-color: pink; /* Light background color */
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px;
+    max-width: 100vh; /* Adjust based on your preference */
+    background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin: 10px;
+        max-width: none; /* Allows the card to expand */
+        width: auto; /* Adapts the width to the viewport */
+        min-width: 0; /* Override any minimum width you might have */
+    }
+
+    .table-responsive {
+        margin: 0 -10px; /* Adjusts negative margins for smaller padding */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        margin: 5px;
+        padding: 50px; /* Reduces padding on very small screens */
+    }
+
+    .table-responsive {
+        margin: 0 -5px; /* Further adjusts for smaller screens */
+    }
+}
+@media screen and (min-width: 992px) {
+    .card {
+        margin: 20px 20px; /* Keeps the card centered */
+        max-width: 100%; /* Or set to a specific px value if preferred */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        max-width: 75%; /* Adjusts max width for very large screens */
+        margin: 0%;/* Adjust the margin if you want more or less space on the sides */
+    }
+}
+  /* Table Styles */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around the table */
+}
+
+/* Table Header Styles */
+th {
+    background-color: #000; /* Black background for headers */
+    color: #FFC0CB; /* Pink text color */
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #FFC0CB; /* Pink border color */
+    font-size: 16px;
+}
+
+/* Table Body Rows and Cells Styles */
+td {
+    background-color: #fff;
+    color: #000; /* Black text color for table body */
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd; /* Light grey border for rows */
+}
+
+/* First row of cells rounded */
+tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
+/* Last row of cells rounded */
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+h1{
+    text-decoration: solid;
+    text-align: center;
+    text-shadow: #000;
+    font-weight: 700;
+}
+
+.slogan{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: smaller;
+}
